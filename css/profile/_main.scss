@@ -182,10 +182,6 @@
 
     &_show{
         height: 170px;
-
-        .contact__button{
-            bottom: 10px;
-        }
     }
 
     &__content{
@@ -237,7 +233,7 @@
     &__button{
         position: absolute;
         left: calc(50% - 20px);
-        bottom: calc(50% - 25px / 2);
+        bottom: 10px;
 
         width: 40px;
         height: 25px;
@@ -245,7 +241,6 @@
         border: none;
 
         cursor: pointer;
-
         
         background-size: cover;
         background-repeat: no-repeat;
@@ -266,6 +261,28 @@
             &:hover{
                 background-image: url(../../img/arrow-up_hover.svg);
             }
+        }
+
+        &-hover{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+
+            color: #DC7D0C;
+
+            display: none;
+            justify-content: center;
+
+            width: 100%;
+
+            position: absolute;
+            bottom: 40px;
+        }
+
+        &_down:hover ~ &-hover{
+            display: flex;
         }
     }
 }
@@ -403,13 +420,13 @@
 
 }
 
+
 /* новини */
 .article-news{
     margin-top: 85px;
 
     .container{
         width: 1235px;
-        height: 750px;
 
         padding: 0;
 
@@ -422,6 +439,7 @@
         align-items: center;
     }
 
+    // заголовок
     &__title{
         width: 100%;
         height: 85px;
@@ -442,6 +460,16 @@
         margin-left: 125px;
     }
 
+    &__p{
+        height: 100%;
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        margin-left: 30px;
+    }
+
     &__nickname{
         font-family: Roboto;
         font-style: normal;
@@ -451,10 +479,72 @@
 
         color: #20374B;
 
-        margin-left: 30px;
+        margin-bottom: 10px;
     }
 
-    &__panel{
+    &__day{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 15px;
+
+        color: #20374B;
+
+        margin-bottom: 5px;
+    }
+
+    // інформація
+    &__content{
+        margin-top: 38px;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        width: 100%;
+    }
+
+    &__img{
+        border-radius: 10px;
+
+        box-shadow: 0px 5px 9px rgba(0,0,0,0.25);
+
+        flex-grow: 1;
+        flex-shrink: 1;
+
+        max-height: 900px;
+        max-width: 950px;
+    }
+
+    &__video{
+        width: 820px;
+        height: 445px;
+
+        cursor: pointer;
+    }
+
+    &__text{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 28px;
+
+        color: #14202A;
+
+        display: flex;
+        width: 100%;
+
+        margin-top: 35px;
+
+        padding-left: 230px;
+        padding-right: 230px;
+
+    }
+
+    // панель контролю
+    &-panel{
         height: 120px;
         width: 100%;
 
@@ -463,59 +553,82 @@
 
         padding-left: 230px;
         padding-right: 230px;
-    }
 
-    &__icon{
-        margin-right: 10px;
-        cursor: pointer;
+        &__button{
+            @extend %buttons;
+            width: 40px;
+            height: 40px;
 
-        &:hover &_hover, &_active{
-            fill: #D78626;
+            margin-right: 12px;
+
+            cursor: pointer;
+
+            background-position: center;
+            background-repeat: no-repeat;
+
+            &_saw{
+                width: 55px;
+                background-image: url(../../img/saw-icon.svg);
+                cursor: default;
+            }
+
+            &_like{
+                background-image: url(../../img/like-icon.svg);
+
+                &:hover{
+                    background-image: url(../../img/like-icon_hover.svg);
+                }
+            }
+
+            &_comment{
+                background-image: url(../../img/comment-icon.svg);
+
+                &:hover{
+                    background-image: url(../../img/comment-icon_hover.svg);
+                }
+            }
+
+            &_share{
+                background-image: url(../../img/share-icon.svg);
+
+                margin-right: auto;
+
+                &:hover{
+                    background-image: url(../../img/share-icon_hover.svg);
+                }
+            }
+
+            &_bookmark{
+                background-image: url(../../img/bookmark-icon.svg);
+
+                &:hover{
+                    background-image: url(../../img/bookmark-icon_hover.svg);
+                }
+            }
+
+
+            // активне 
+            &_active.article-news-panel__button_like{
+                background-image: url(../../img/like-icon_hover.svg);
+            }
+
+            
+
         }
 
-        &_bookmark{
-            margin-left: auto;
+        &__number{
+            font-family: 'Roboto';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 24px;
+            line-height: 28px;
+
+            color: #A56326;
+
+            margin-right: 33px;
         }
-    }
+    } 
 
-    &__number{
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
 
-        color: #A56326;
-
-        margin-right: 30px;
-    }
-
-    &__img{
-        border-radius: 10px;
-
-        box-shadow: 0px 5px 9px rgba(0,0,0,0.25);
-
-        margin-top: 35px;
-        flex-grow: 1;
-        flex-shrink: 1;
-
-        max-height: 1165px;
-    }
-
-    &__text{
-        font-family: Roboto;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 28px;
-
-        color: #14202A;
-
-        width: 100%;
-
-        margin-top: 35px;
-
-        padding-left: 230px;
-        padding-right: 230px;
-    }
 }
+

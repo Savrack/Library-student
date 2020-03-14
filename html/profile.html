@@ -83,6 +83,7 @@
                             <p class="contact__text">stas.ward@gmail.com</p>
                         </address>
                         <button type="button" class="contact__button contact__button_down" id="showContactInfo"></button>
+                        <p class="contact__button-hover">Доп. информация</p>
                     </div>
                 </section>
             </div>
@@ -133,91 +134,110 @@
         <section class="article-news">
             <div class="container">
                 <h2 class="article-news__title">
-                    <img src="../img/user-photo.png" alt="" class="article-news__user-photo" width="52" height="52">
-                    <p class="article-news__nickname">biggorilla763</p>
+                    <img src="../img/user-photo1.png" alt="" class="article-news__user-photo" width="52" height="52">
+                    <p class="article-news__p">
+                        <span class="article-news__nickname">redkoala130</span>
+                        <span class="article-news__day">6 марта</span>
+                    </p>
                 </h2>
-                <img src="../img/sky.png" alt="" class="article-news__img" >
-                <p class="article-news__text">Технологии будущего</p>
-                <div class="article-news__panel">
-                    <img src="../img/saw-icon.svg" alt="" class="article-news__icon">
-                    <span class="article-news__number">322</span>
 
-                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" opacity="0.9" d="M0 34H6.85012V13.6H0V34ZM37.6757 15.3C37.6757 13.43 36.1344 11.9 34.2506 11.9H23.4445L25.0714 4.131L25.1228 3.587C25.1228 2.89 24.8317 2.244 24.3693 1.785L22.554 0L11.2856 11.203C10.6519 11.815 10.2752 12.665 10.2752 13.6V30.6C10.2752 32.47 11.8165 34 13.7002 34H29.113C30.5344 34 31.7503 33.15 32.2641 31.926L37.4359 19.941C37.59 19.55 37.6757 19.142 37.6757 18.7V15.3Z" fill="#2F6291"/>
-                    </svg>
-                    <span class="article-news__number">73</span>
+                <div class="article-news__content">
+                    <img src="../img/paris.png" alt="" class="article-news__img">
+                </div>
 
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M30.6 0H3.4C1.53 0 0 1.53 0 3.4V34L6.8 27.2H30.6C32.47 27.2 34 25.67 34 23.8V3.4C34 1.53 32.47 0 30.6 0Z" fill="#426F98"/>
-                    </svg>
-                    <span class="article-news__number">21</span>
+                <div class="article-news-panel">
+                    <button type="button" class="article-news-panel__button article-news-panel__button_like article-news-panel__button_active"></button>
+                    <span class="article-news-panel__number">42</span>
 
-                    <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M0.0166667 30L35 15L0.0166667 0L0 11.6667L25 15L0 18.3333L0.0166667 30Z" fill="#426F98"/>
-                    </svg>
-                    
-                    <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon article-news__icon_bookmark">
-                        <path class="article-news__icon_hover" d="M24 0H4C1.8 0 0.0200005 1.8 0.0200005 4L0 36L14 30L28 36V4C28 1.8 26.2 0 24 0ZM24 30L14 25.64L4 30V4H24V30Z" fill="#2F6291"/>
-                    </svg>
+                    <button type="button" class="article-news-panel__button article-news-panel__button_comment"></button>
+                    <span class="article-news-panel__number">12</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_share"></button>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_bookmark"></button>
                 </div>
             </div>
         </section>
 
-
-        <section class="article-news">
-            <div class="container">
-
-                <img src="../img/article.png" alt="" class="article-news__img" >
-                <p class="article-news__text">Книги, которые помогут создать новогоднее настроение</p>
-                <div class="article-news__panel">
-
-                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" opacity="0.9" d="M0 34H6.85012V13.6H0V34ZM37.6757 15.3C37.6757 13.43 36.1344 11.9 34.2506 11.9H23.4445L25.0714 4.131L25.1228 3.587C25.1228 2.89 24.8317 2.244 24.3693 1.785L22.554 0L11.2856 11.203C10.6519 11.815 10.2752 12.665 10.2752 13.6V30.6C10.2752 32.47 11.8165 34 13.7002 34H29.113C30.5344 34 31.7503 33.15 32.2641 31.926L37.4359 19.941C37.59 19.55 37.6757 19.142 37.6757 18.7V15.3Z" fill="#2F6291"/>
-                    </svg>
-                    <span class="article-news__number">73</span>
-
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M30.6 0H3.4C1.53 0 0 1.53 0 3.4V34L6.8 27.2H30.6C32.47 27.2 34 25.67 34 23.8V3.4C34 1.53 32.47 0 30.6 0Z" fill="#426F98"/>
-                    </svg>
-                    <span class="article-news__number">21</span>
-
-                    <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M0.0166667 30L35 15L0.0166667 0L0 11.6667L25 15L0 18.3333L0.0166667 30Z" fill="#426F98"/>
-                    </svg>
-                    
-                    <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon article-news__icon_bookmark">
-                        <path class="article-news__icon_hover" d="M24 0H4C1.8 0 0.0200005 1.8 0.0200005 4L0 36L14 30L28 36V4C28 1.8 26.2 0 24 0ZM24 30L14 25.64L4 30V4H24V30Z" fill="#2F6291"/>
-                    </svg>
-                </div>
-            </div>
-        </section>
-        
         <section class="article-news">
             <div class="container">
                 <h2 class="article-news__title">
-                    <img src="../img/user-photo.png" alt="" class="article-news__user-photo" width="52" height="52">
-                    <p class="article-news__nickname">happysnake594</p>
+                    <img src="../img/user-photo2.png" alt="" class="article-news__user-photo" width="52" height="52">
+                    <p class="article-news__p">
+                        <span class="article-news__nickname">biggorilla763</span>
+                        <span class="article-news__day">5 марта</span>
+                    </p>
                 </h2>
-                <img src="../img/mem.png" alt="" class="article-news__img" >
-                <div class="article-news__panel">
 
-                    <svg width="38" height="34" viewBox="0 0 38 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" opacity="0.9" d="M0 34H6.85012V13.6H0V34ZM37.6757 15.3C37.6757 13.43 36.1344 11.9 34.2506 11.9H23.4445L25.0714 4.131L25.1228 3.587C25.1228 2.89 24.8317 2.244 24.3693 1.785L22.554 0L11.2856 11.203C10.6519 11.815 10.2752 12.665 10.2752 13.6V30.6C10.2752 32.47 11.8165 34 13.7002 34H29.113C30.5344 34 31.7503 33.15 32.2641 31.926L37.4359 19.941C37.59 19.55 37.6757 19.142 37.6757 18.7V15.3Z" fill="#2F6291"/>
-                    </svg>
-                    <span class="article-news__number">73</span>
+                <div class="article-news__content">
+                    <video class="article-news__video" poster="../img/sky.png" controls></video>
 
-                    <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M30.6 0H3.4C1.53 0 0 1.53 0 3.4V34L6.8 27.2H30.6C32.47 27.2 34 25.67 34 23.8V3.4C34 1.53 32.47 0 30.6 0Z" fill="#426F98"/>
-                    </svg>
-                    <span class="article-news__number">21</span>
+                    <p class="article-news__text">Технологии будущего</p>
+                </div>
 
-                    <svg width="35" height="30" viewBox="0 0 35 30" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon">
-                        <path class="article-news__icon_hover" d="M0.0166667 30L35 15L0.0166667 0L0 11.6667L25 15L0 18.3333L0.0166667 30Z" fill="#426F98"/>
-                    </svg>
-                    
-                    <svg width="28" height="36" viewBox="0 0 28 36" fill="none" xmlns="http://www.w3.org/2000/svg" class="article-news__icon article-news__icon_bookmark">
-                        <path class="article-news__icon_hover" d="M24 0H4C1.8 0 0.0200005 1.8 0.0200005 4L0 36L14 30L28 36V4C28 1.8 26.2 0 24 0ZM24 30L14 25.64L4 30V4H24V30Z" fill="#2F6291"/>
-                    </svg>
+                <div class="article-news-panel">
+                    <button type="button" class="article-news-panel__button article-news-panel__button_saw"></button>
+                    <span class="article-news-panel__number">322</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_like"></button>
+                    <span class="article-news-panel__number">42</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_comment"></button>
+                    <span class="article-news-panel__number">12</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_share"></button>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_bookmark"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-news">
+            <div class="container">
+                <div class="article-news__content">
+                    <img src="../img/article.png" alt="Книги, которые помогут создать новогоднее настроение" class="article-news__img">
+
+                    <p class="article-news__text">Книги, которые помогут создать новогоднее настроение</p>
+                </div>
+
+                <div class="article-news-panel">
+                    <button type="button" class="article-news-panel__button article-news-panel__button_like"></button>
+                    <span class="article-news-panel__number">95</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_comment"></button>
+                    <span class="article-news-panel__number">31</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_share"></button>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_bookmark"></button>
+                </div>
+            </div>
+        </section>
+
+        <section class="article-news">
+            <div class="container">
+                <h2 class="article-news__title">
+                    <img src="../img/user-photo3.png" alt="" class="article-news__user-photo" width="52" height="52">
+                    <p class="article-news__p">
+                        <span class="article-news__nickname">happysnake594</span>
+                        <span class="article-news__day">4 марта</span>
+                    </p>
+                </h2>
+
+                <div class="article-news__content">
+                    <img src="../img/mem.png" alt="" class="article-news__img">
+                </div>
+
+                <div class="article-news-panel">
+                    <button type="button" class="article-news-panel__button article-news-panel__button_like"></button>
+                    <span class="article-news-panel__number">157</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_comment"></button>
+                    <span class="article-news-panel__number">48</span>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_share"></button>
+
+                    <button type="button" class="article-news-panel__button article-news-panel__button_bookmark"></button>
                 </div>
             </div>
         </section>
