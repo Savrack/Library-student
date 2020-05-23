@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+
+    <!-- text -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet"> 
+
+    <!-- style -->
+    <link rel="stylesheet" href="../css/surface/style.css">
+</head>
+<body>
+    <header class="page-header">
+        <div class="container">
+            <a href="" class="page-header__logo logo">
+                <div class="logo__circle"></div>
+                <img src="../img/logo.png" alt="LIBRARY AND STUDENT" class="logo__img" height="45" width="370">
+                <img src="../img/logo-hover.png" alt="LIBRARY AND STUDENT" class="logo__img-active" height="45" width="370">
+            </a>
+
+            <nav class="page-header__nav main-site-nav">
+                <ul class="main-site-nav__list">
+                    <li class="main-site-nav__item"><a href="index.html" class="main-site-nav__link">Главная</a></li>
+                    <li class="main-site-nav__item"><a href="subjects.html" class="main-site-nav__link">Предметы</a></li>
+                    <li class="main-site-nav__item"><a href="about-site.html" class="main-site-nav__link">О сайте</a></li>
+                    <li class="main-site-nav__item"><a href="options.html" class="main-site-nav__link">Опции</a></li>
+                    <li class="main-site-nav__item"><a href="chat.html" class="main-site-nav__link">Чат</a></li>
+                    <li class="main-site-nav__item"><a href="profile.html" class="main-site-nav__link">Профиль</a></li>
+                </ul>
+            </nav>
+
+            <button class="page-header__search main-site-search">
+                <svg width="33" height="33" viewBox="0 0 33 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="main-site-search__img" fill="#D7DDD0" d="M23.5849 20.7547H22.0943L21.566 20.2453C23.4151 18.0943 24.5283 15.3019 24.5283 12.2642C24.5283 5.49057 19.0377 0 12.2642 0C5.49057 0 0 5.49057 0 12.2642C0 19.0377 5.49057 24.5283 12.2642 24.5283C15.3019 24.5283 18.0943 23.4151 20.2453 21.566L20.7547 22.0943V23.5849L30.1887 33L33 30.1887L23.5849 20.7547ZM12.2642 20.7547C7.56604 20.7547 3.77358 16.9623 3.77358 12.2642C3.77358 7.56604 7.56604 3.77358 12.2642 3.77358C16.9623 3.77358 20.7547 7.56604 20.7547 12.2642C20.7547 16.9623 16.9623 20.7547 12.2642 20.7547Z"/>
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="page-main">
+        <nav class="surface-nav">
+            <div class="container">
+                <button class="surface-nav__button"></button>
+                <p class="surface-nav__title">Друзья</p>
+                <form action="" class="surface-nav-search">
+                    <input type="submit" value="" class="surface-nav-search__submit">
+                    <input type="text" name="q" placeholder="Найти" class="surface-nav-search__input">
+                </form>
+            </div>
+        </nav>
+
+        <nav class="surface-page">
+            <div class="container">
+                <ul class="surface-page__list">
+                    <li class="surface-page__item"><a href="#" class="surface-page__link">Друзья</a></li>
+                    <li class="surface-page__item"><a href="#" class="surface-page__link">Педагоги</a></li>
+                </ul>
+                <div class="surface-page-decoration">
+                    <div class="surface-page-decoration__item"></div>
+                </div>
+            </div>
+        </nav>
+
+        <section class="surface-book">
+            <div class="container">
+                <div class="surface-book__item">
+                    <p class="surface-book__title">Менеджер</p>
+                    <img src="../img/surface-2.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Елена Шайновская</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">sara.cruz@example.com</p>
+                </div>
+                <div class="surface-book__item">
+                    <p class="surface-book__title">FrontEnd</p>
+                    <img src="../img/surface-2.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Александра Соловей</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">sara.cruz@example.com</p>
+                </div>
+                <div class="surface-book__item">
+                    <p class="surface-book__title">Бариста</p>
+                    <img src="../img/surface-3.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Евгения Раймос</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">joy.ramos@example.com</p>
+                </div>
+                <div class="surface-book__item">
+                    <p class="surface-book__title">Администратор</p>
+                    <img src="../img/surface-3.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Елена Шайновская</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">sara.cruz@example.com</p>
+                    <p class="surface-book__text">Оценка</p>
+                    <div class="surface-book__mark">
+                        <progress max="12" value="9.3" class="surface-book__progress"></progress>
+                        <div class="surface-book__mark-value" style="left:calc(100% * 9.3 / 12 - 25px)">9.3</div>
+                    </div>
+                </div>
+                <div class="surface-book__item">
+                    <p class="surface-book__title">Директор</p>
+                    <img src="../img/surface-2.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Юлия Никрасова</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">sara.cruz@example.com</p>
+                    <p class="surface-book__text">Оценка</p>
+                    <div class="surface-book__mark">
+                        <progress max="12" value="9.3" class="surface-book__progress"></progress>
+                        <div class="surface-book__mark-value" style="left:calc(100% * 9.3 / 12 - 25px)">9.3</div>
+                    </div>
+                </div>
+                <div class="surface-book__item">
+                    <p class="surface-book__title">Официант</p>
+                    <img src="../img/surface-1.png" alt="" class="surface-book__img">
+                    <p class="surface-book__contact-info">Елена Шайновская</p>
+                    <p class="surface-book__contact-info">(406) 555-0120</p>
+                    <p class="surface-book__contact-info">sara.cruz@example.com</p>
+                    <p class="surface-book__text">Оценка</p>
+                    <div class="surface-book__mark">
+                        <progress max="12" value="9.3" class="surface-book__progress"></progress>
+                        <div class="surface-book__mark-value" style="left:calc(100% * 9.3 / 12 - 25px)">9.3</div>
+                    </div>
+                </div>
+
+            </div>
+            
+        </section>
+    </main>
+</body>
+</html>
